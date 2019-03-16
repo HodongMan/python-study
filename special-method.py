@@ -1,5 +1,5 @@
 from collections import namedtuple
-from random import choice
+from random import choice, shuffle
 
 Card = namedtuple('Card', ['rank', 'suit'])
 
@@ -19,4 +19,14 @@ class Deck:
 
     def __call__(self):
 
-        print('Card Deck')
+        shuffle(self._cards)
+
+if __name__ == "__main__":
+
+    cardDeck = Deck()
+    cardDeck()
+    print(cardDeck[1])
+    print(cardDeck[2])
+    print(cardDeck[3])
+    print(cardDeck[4])
+    print(cardDeck[5])
