@@ -18,8 +18,3 @@ def readRandomToFile(fileName):
 
     with open(fileName, "wb") as f:
         f.write(os.urandom(10))
-
-if __name__ == "__main__":
-
-    readRandomToFile("1.txt")
-        

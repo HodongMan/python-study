@@ -1,4 +1,4 @@
-from collections import namedtuple
+from collections import namedtuple, Counter
 from random import choice, shuffle
 
 Card = namedtuple('Card', ['rank', 'suit'])
@@ -23,10 +23,16 @@ class Deck:
 
 if __name__ == "__main__":
 
-    cardDeck = Deck()
-    cardDeck()
-    print(cardDeck[1])
-    print(cardDeck[2])
-    print(cardDeck[3])
-    print(cardDeck[4])
-    print(cardDeck[5])
+    a = 1
+    a[1]
+    a()
+
+
+with open("read.txt", "rb") as f:
+
+    데이터셋 = f.read()
+    ///
+
+with open("read.csv", "w") as f:
+
+    f.write(데이터셋)
